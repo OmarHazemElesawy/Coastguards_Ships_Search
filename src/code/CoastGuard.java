@@ -1457,42 +1457,6 @@ public class CoastGuard extends searchProblem {
     }
   
 	public static String gridToString(String[][] grid) {
-//		String res = ""; //guardPosition;guardCapacity;numOfShips;numOfPassengers;noOfWrecks;blackBoxHealth
-//		String guardPosition = findCoastGuard(grid);
-//		String guardCapacity = "";
-//		int numOfShips = 0;
-//		int numOfPassengers = 0;
-//		int noOfWrecks = 0;
-//		int blackBoxHealth = 0;
-//		for(int i =0 ; i < grid.length; i++) {
-//			for(int j = 0 ; j < grid[i].length; j++) {
-//				if (grid[i][j] != null && grid[i][j].contains("G")) {
-//					if(grid[i][j].contains(",")) {
-//						guardCapacity = (grid[i][j].split(",")[1]).substring(1);
-//					}else{
-//						guardCapacity = grid[i][j].substring(1);
-//					}
-//				}
-//				if(grid[i][j] != null && grid[i][j].contains("SH")){
-//					if(grid[i][j].contains(",")) {
-//						numOfPassengers += Integer.parseInt((grid[i][j].split(",")[0]).substring(2));
-//					}else{
-//						numOfPassengers += Integer.parseInt(grid[i][j].substring(2));
-//					}
-//					numOfShips++;
-//				}
-//				if(grid[i][j] != null && grid[i][j].contains("WD")){
-//					if(grid[i][j].contains(",")) {
-//						blackBoxHealth += Integer.parseInt((grid[i][j].split(",")[0]).substring(2));
-//					}else{
-//						blackBoxHealth += Integer.parseInt(grid[i][j].substring(2));
-//					}
-//					noOfWrecks++;
-//				}
-//			}
-//		}
-//		res = guardPosition + ";" + guardCapacity + ";" + numOfShips + ";" + numOfPassengers + ";" + noOfWrecks + ";" + blackBoxHealth;
-//		return res;
 		String res = "";
 		for (String[] row : grid) {
 			for (String element : row) {
